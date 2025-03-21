@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luminar1x - AI Sanatçı ve Müzik Yapımcısı">
+    <title>Luminar1x - Ana Sayfa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="loader"></div>
+    <header id="header">
+        <div class="logo">
+            <img src="https://yt3.googleusercontent.com/xCN0HATF_-ku7Hg_hE4dbHciv4gNeYZg7SpDCviOw7pg91SwZKoQ0m6rj36A88uRoJgkb-peRg=s900-c-k-c0x00ffffff-no-rj" alt="Luminar1x Logo" loading="lazy">
+        </div>
+        <h1>Luminar1x</h1>
+        <nav class="main-nav" role="navigation">
+            <ul>
+                <li><a href="#hero" aria-label="Ana Sayfaya Git">Ana Sayfa</a></li>
+                <li><a href="#music-videos" aria-label="Müzik ve Videolar Bölümü">Müzik ve Videolar</a></li>
+                <li><a href="#spotify-music" aria-label="Spotify Sayfası">Spotify</a></li>
+                <li><a href="#blog-posts" aria-label="Blog Yazıları">Blog</a></li>
+            </ul>
+            <div class="music-player" role="region" aria-label="Müzik Çalar">
+                <i class="fas fa-music"></i>
+                <iframe src="https://open.spotify.com/embed/album/1ajx33urH6HMyaT8leeKCO?utm_source=generator" frameborder="0" allowtransparency="true" allow="encrypted-media; autoplay" loading="lazy"></iframe>
+            </div>
+            <div class="search-bar">
+                <input type="search" placeholder="Sitede ara..." aria-label="Sitede ara">
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Luminar1x</h2>
+            <p>AI Sanatçı - Müzik Yapımcısı</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/luminar1x" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/luminar1x" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCUfV3q8vRs-tFsZ-KxHxptQ" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="music-videos">
+        <h3>Müzik Videoları</h3>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <iframe src="https://www.youtube.com/embed/OYstyOXHpvc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                    <div class="video-info">
+                        <h4>Video 1 Başlık</h4>
+                        <p>Bu, birinci videonun kısa açıklamasıdır.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <iframe src="https://www.youtube.com/embed/kpw85AKv88k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                    <div class="video-info">
+                        <h4>Video 2 Başlık</h4>
+                        <p>Bu, ikinci videonun kısa açıklamasıdır.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section id="spotify-music">
+        <h3>Spotify Müziklerim</h3>
+        <div class="spotify-embed">
+            <iframe src="https://open.spotify.com/embed/artist/6I5csenllvYe3iawFH4e2D" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section id="blog-posts">
+        <h3>Blog Yazılarım</h3>
+        <div class="blog-posts-container">
+            <div class="blog-post">
+                <img src="https://i.ytimg.com/vi/kpw85AKv88k/sddefault.jpg" alt="Blog Thumbnail" loading="lazy">
+                <h4>Blog Yazısı 1</h4>
+                <div class="snippet">Bu, blog yazısının kısa bir özetidir...</div>
+                <div class="full-content" id="post-content-1">
+                    <p>Bu, blog yazısının tam içeriğidir. AI ile müzik yapımı hakkında bilgiler, ipuçları ve daha fazlası!</p>
+                </div>
+                <button class="toggle-btn" onclick="toggleContent('post-content-1')">Devamını Oku</button>
+            </div>
+            <div class="blog-post">
+                <img src="https://via.placeholder.com/300x150" alt="Blog Thumbnail" loading="lazy">
+                <h4>Blog Yazısı 2</h4>
+                <div class="snippet">Bu, ikinci yazının kısa özetidir...</div>
+                <div class="full-content" id="post-content-2">
+                    <p>Bu yazıda, AI sanatının geleceği ve müzik prodüksiyonundaki etkileri ele alınıyor.</p>
+                </div>
+                <button class="toggle-btn" onclick="toggleContent('post-content-2')">Devamını Oku</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="social-media-links">
+                <a href="https://www.instagram.com/luminar1x" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/luminar1x" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCUfV3q8vRs-tFsZ-KxHxptQ" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="sitemap">
+                <ul>
+                    <li><a href="#hero">Ana Sayfa</a></li>
+                    <li><a href="#music-videos">Müzik ve Videolar</a></li>
+                    <li><a href="#spotify-music">Spotify</a></li>
+                    <li><a href="#blog-posts">Blog</a></li>
+                </ul>
+            </div>
+            <p>AI 2025 Luminar1x. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
